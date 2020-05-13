@@ -1,1 +1,1 @@
-# 18-progressive-budget
+# 18-clicky-game
