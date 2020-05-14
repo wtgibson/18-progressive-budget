@@ -1,26 +1,44 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
+import Navbar from './components/Navbar/Navbar';
+import Wrapper from './components/Wrapper/Wrapper';
+import Card from './components/Card/Card';
+import images from "./images.json";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+class App extends Component {
+  // Setting state
+  state = {
+    images,
+    score: 0,
+    highScores: 0,
+    clicked: [],
+    text: "Take a Guess!"
+  };
+
+  render() {
+    return (
+      <div>
+        <Navbar 
+          text={this.state.text}
+          score={this.state.score}
+          highScore={this.state.highScore} />
+        <div className="jumbotron text-center">
+          <h1>Puppy Clicky Game</h1>
+          <p> Click on each image once and only once to win the game!</p>
+          <Wrapper>
+            {this.state.images.map(image => (
+              <Card
+                id={image.id}
+                key={image.id}
+                image={image.image}
+                clickMe={this.clickMe}
+              />
+            ))}
+          </Wrapper>
+        </div>
+      </div>
+    )
+  };
+};
 
 export default App;
