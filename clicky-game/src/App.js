@@ -10,7 +10,7 @@ class App extends Component {
   state = {
     images,
     score: 0,
-    highScores: 0,
+    highScore: 0,
     clicked: [],
     text: "Pick a Puppy!"
   };
@@ -64,7 +64,7 @@ class App extends Component {
           highScore={this.state.highScore} />
         <div className="jumbotron text-center bg-light">
           <h1>Puppy Clicky Game</h1>
-          <p> Click on each image once and only once to win the game!</p>
+          <p> Click on each puppy once and only once to win the game!</p>
           <Wrapper>
             {this.state.images.map(image => (
               <Card
