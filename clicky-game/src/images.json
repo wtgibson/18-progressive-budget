@@ -46,5 +46,17 @@
     {
         "id": 12,
         "image": "https://images.dog.ceo/breeds/terrier-bedlington/n02093647_2027.jpg"
+    },
+    {
+        "id": 13,
+        "image": "https://images.dog.ceo/breeds/brabancon/n02112706_68.jpg"
+    },
+    {
+        "id": 14,
+        "image": "https://images.dog.ceo/breeds/ovcharka-caucasian/IMG_20190811_105232.jpg"
+    },
+    {
+        "id": 15,
+        "image": "https://images.dog.ceo/breeds/hound-plott/hhh_plott002.JPG"
     }
 ]

@@ -5,8 +5,8 @@ import "./wrapper.css";
 
 function Wrapper(props) {
     return (
-        <div className="container">
-            <div className="row">
+        <div className="container bg-light">
+            <div className="row bg-light">
                 {props.children}
             </div>
         </div>

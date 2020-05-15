@@ -5,8 +5,8 @@ import "./navbar.css";
 
 function Navbar(props) {
     return (
-        <div>
-            <nav className="navbar fixed-top">
+        <div className="bg-light">
+            <nav className="navbar fixed-top bg-success">
                 <h4>Puppy Clicky Game</h4>
                 <h4>{props.text}</h4>
                 <h4>Score: {props.score} | Top Score {props.highScore}</h4>

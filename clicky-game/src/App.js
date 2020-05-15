@@ -17,12 +17,12 @@ class App extends Component {
 
   render() {
     return (
-      <div>
+      <div className="bg-light">
         <Navbar 
           text={this.state.text}
           score={this.state.score}
           highScore={this.state.highScore} />
-        <div className="jumbotron text-center">
+        <div className="jumbotron text-center bg-light">
           <h1>Puppy Clicky Game</h1>
           <p> Click on each image once and only once to win the game!</p>
           <Wrapper>

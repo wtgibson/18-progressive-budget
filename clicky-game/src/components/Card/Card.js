@@ -6,11 +6,10 @@ import "./card.css";
 function Card(props) {
     return (
         <div className="row">
-            <div className="col-md-6">
-                    <div className="card">
-                        <img src={props.image} alt={props.id} onClick={() => props.clickMe(props.id)}></img>
+            <div className="col-">
+                    <div className="card margin">
+                        <img className="puppy-img img-fluid" src={props.image} alt={props.id} onClick={() => props.clickMe(props.id)}></img>
                     </div>
-
             </div>
         </div>
     );
